@@ -1,0 +1,216 @@
+/* Responsive CSS - Otimizações adicionais para mobile */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  body { font-size: 14px; }
+  .btn { padding: 8px 14px; }
+  .card { padding: 16px; }
+}
+
+/* Mobile (480px - 768px) */
+@media (max-width: 768px) {
+  body { font-size: 13px; }
+  
+  /* Melhorias de espaçamento */
+  .card { padding: 12px; margin-bottom: 12px; }
+  .btn { padding: 8px 12px; min-height: 40px; }
+  
+  /* Tabelas responsivas */
+  .table-wrap {
+    margin: -12px;
+    padding: 0;
+  }
+  
+  table {
+    font-size: 12px;
+    min-width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    white-space: nowrap;
+  }
+  
+  /* Ações em tabelas */
+  td:last-child { min-width: 100px; }
+  
+  /* Melhorias de input */
+  .input, .select {
+    min-height: 40px;
+    font-size: 16px;
+  }
+  
+  /* Badges */
+  .badge { font-size: 11px; padding: 3px 8px; }
+  
+  /* Filtros */
+  .flex.gap-8 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+  
+  .flex.gap-8 .btn {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Pequenos dispositivos (< 480px) */
+@media (max-width: 480px) {
+  body { font-size: 12px; }
+  
+  /* Layout principal */
+  .card { padding: 10px; margin-bottom: 10px; }
+  .btn { 
+    padding: 6px 10px; 
+    font-size: 12px;
+    min-height: 36px;
+  }
+  
+  /* Tabelas em mobile - scroll horizontal */
+  .table-wrap {
+    margin: -10px;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  table {
+    font-size: 11px;
+    min-width: 600px;
+  }
+  
+  th {
+    padding: 6px;
+    font-size: 9px;
+    font-weight: 700;
+  }
+  
+  td {
+    padding: 6px;
+    white-space: nowrap;
+  }
+  
+  /* Colunas de ação */
+  td:last-child {
+    min-width: 80px;
+    white-space: normal;
+  }
+  
+  /* Inputs */
+  .input, .select {
+    min-height: 40px;
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+  
+  label { font-size: 11px; }
+  
+  /* Badges */
+  .badge { 
+    font-size: 10px; 
+    padding: 2px 6px;
+    display: inline-block;
+  }
+  
+  /* Filtros em scroll */
+  .flex.gap-8 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 0 8px 0;
+    margin-bottom: 12px;
+  }
+  
+  .flex.gap-8 .btn {
+    flex-shrink: 0;
+    padding: 6px 10px;
+    font-size: 11px;
+    min-height: 32px;
+  }
+  
+  /* Modal em mobile */
+  .modal {
+    max-width: 100% !important;
+    margin: 16px;
+    border-radius: 12px;
+  }
+  
+  .modal-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .modal-close {
+    align-self: flex-end;
+    margin-top: -8px;
+  }
+  
+  /* Formulários */
+  .form-group { margin-bottom: 10px; }
+  .form-row { grid-template-columns: 1fr; gap: 10px; }
+  .form-actions { 
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Página */
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .page-title { font-size: 16px; }
+  
+  /* Search bar */
+  .search-bar {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  /* Estados vazios */
+  .empty-state {
+    padding: 20px 12px;
+  }
+  
+  .empty-state .icon { font-size: 32px; }
+  
+  /* Utilitários */
+  .text-sm { font-size: 12px; }
+  .text-xs { font-size: 11px; }
+  .mt-16 { margin-top: 10px; }
+  .gap-8 { gap: 6px; }
+  .gap-12 { gap: 8px; }
+}
+
+/* Extra pequeno (< 360px) */
+@media (max-width: 360px) {
+  .btn { 
+    padding: 6px 8px; 
+    font-size: 11px;
+    min-height: 32px;
+  }
+  
+  .card { padding: 8px; }
+  
+  table { min-width: 500px; }
+  
+  th, td { padding: 4px; }
+  
+  .modal { margin: 8px; }
+  
+  .page-title { font-size: 14px; }
+}

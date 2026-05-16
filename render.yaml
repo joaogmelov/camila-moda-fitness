@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: camila-moda-fitness-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        sync: false        # você vai colar o valor no painel do Render
+      - key: NODE_ENV
+        value: production
