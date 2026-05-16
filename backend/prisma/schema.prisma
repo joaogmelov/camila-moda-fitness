@@ -34,5 +34,5 @@ model Venda {
   observacao  String?
   createdAt   DateTime   @default(now())
 
-  cliente Cliente @relation(fields: [clienteId], references: [id])
+  cliente Cliente @relation(fields: [clienteId], references: [id], onDelete: Cascade)
 }
